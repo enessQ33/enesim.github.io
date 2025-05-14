@@ -2,25 +2,39 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Enes'in Web Sitesi</title>
+  <title>Enes'in Dijital Kartı</title>
   <style>
     body {
-      background: #111;
-      color: #0f0;
-      font-family: 'Courier New', monospace;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    .card {
+      background: #222;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
       text-align: center;
-      padding-top: 100px;
+      animation: fadeIn 2s ease-in-out forwards;
+      transform: translateY(50px);
+      opacity: 0;
     }
     h1 {
-      font-size: 48px;
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #0f0;
     }
     p {
-      font-size: 24px;
+      font-size: 20px;
+      color: #ccc;
     }
-  </style>
-</head>
-<body>
-  <h1>Merhaba, Ben Enes!</h1>
-  <p>Bu benim ilk web sitem. Deneme 1-2-3!</p>
-</body>
-</html>
+    @keyframes fadeIn {
+      to {
+        transform: translateY
